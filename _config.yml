@@ -4,3 +4,8 @@ subtitle: "A Blog About Building Stuff"
 theme: beautiful-jekyll-theme
 url: "https://umashankar.dev"
 baseurl: ""
+
+# Author information
+author:
+  name: "Umashankar Subramanian"
+  url: "https://www.linkedin.com/in/umashankars/"

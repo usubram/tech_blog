@@ -7,6 +7,17 @@
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.excerpt | strip_html | normalize_whitespace }}">
     <meta property="og:site_name" content="{{ site.title }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta name="description" content="{{ page.description | default: page.excerpt | strip_html | normalize_whitespace }}">
+    <meta property="og:title" content="{{ page.og.title | default: page.title }}">
+    <meta property="og:description" content="{{ page.og.description | default: page.description | strip_html | normalize_whitespace }}">
+    <meta property="og:type" content="{{ page.og.type | default: 'website' }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ page.og.image | default: page.image | relative_url | absolute_url }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: page.excerpt | strip_html | normalize_whitespace }}">
+    <meta name="twitter:image" content="{{ page.og.image | default: page.image | relative_url | absolute_url }}">
     <style>
         body {
             font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;

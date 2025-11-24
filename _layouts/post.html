@@ -9,6 +9,17 @@
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.excerpt | strip_html | normalize_whitespace }}">
     <meta property="og:site_name" content="{{ site.title }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta name="description" content="{{ page.description | default: page.excerpt | strip_html | normalize_whitespace }}">
+    <meta property="og:title" content="{{ page.og.title | default: page.title }}">
+    <meta property="og:description" content="{{ page.og.description | default: page.description | strip_html | normalize_whitespace }}">
+    <meta property="og:type" content="{{ page.og.type | default: 'article' }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ page.og.image | default: page.image | relative_url | absolute_url }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: page.excerpt | strip_html | normalize_whitespace }}">
+    <meta name="twitter:image" content="{{ page.og.image | default: page.image | relative_url | absolute_url }}">
     <!-- Note: You might want to add a default og:image or one based on page front matter -->
     <!-- <meta property="og:image" content="{{ site.url }}/assets/images/{{ page.image }}"> -->
 
@@ -105,15 +116,13 @@
 
     <header>
         <h1>{{ page.title }}</h1>
-        <p>By {{ site.author }} on {{ page.date | date: "%B %d, %Y" }}</p>
+        <p>By <a href="{{ site.author.url }}" target="_blank" rel="noopener">{{ site.author.name }}</a> on {{ page.date | date: "%B %d, %Y" }}</p>
     </header>
     <div class="container">
         <main>
             {{ content }}
         </main>
     </div>
-
-    <!-- Mermaid support removed: no diagrams rendered client-side. -->
 
 </body>
 </html>

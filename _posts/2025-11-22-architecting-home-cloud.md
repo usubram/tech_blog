@@ -5,19 +5,17 @@ date: 2025-11-22
 categories: [Architecture, DevOps]
 tags: [TrueNAS, Proxmox, System Design]
 description: "A hands-on architect’s journey building a private cloud at home, with lessons on zero trust, storage, high availability, and disaster recovery."
-canonical_url: "https://yourdomain.com/posts/2025-11-22-architecting-home-cloud.html"
 image: "/assets/img/architecture.svg"
 og:
   title: "The Architect’s Dilemma: Why I Replaced My Home Lab with a Private Cloud"
   description: "A hands-on architect’s journey building a private cloud at home, with lessons on zero trust, storage, high availability, and disaster recovery."
   type: "article"
-  url: "https://yourdomain.com/posts/2025-11-22-architecting-home-cloud.html"
   image: "/assets/img/architecture.svg"
 ---
-As a Distinguished Architect, I spend the majority of my professional life designing large-scale distributed systems for the retail sector. We talk about platforms that handle unpredictable load, require five-nines availability, and operate with strict cost discipline. The work is often abstract—diagrams, reference architectures, review boards, and design debates.
+As a Distinguished Architect, I spend the majority of my professional life designing large-scale distributed systems for the retail sector. We talk about platforms that handle unpredictable load, require five-nines availability, and operate with strict cost discipline. The work is often abstract - diagrams, reference architectures, review boards, and design debates.
 
 But here’s the uncomfortable truth: Architects become less effective when they stop being hands-on.
-Real systems behave differently under load, during failures, or when constraints collide. The best way to stay sharp is to intentionally expose yourself to those constraints—not in theory, but on real hardware, real networks, and real services.
+Real systems behave differently under load, during failures, or when constraints collide. The best way to stay sharp is to intentionally expose yourself to those constraints - not in theory, but on real hardware, real networks, and real services.
 To bridge this gap, I rebuilt my home infrastructure from the ground up. I stopped treating it as a "home lab" and started treating it as a production environment. I built a fully segmented, observable, distributed private cloud, applying the same patterns I insist on in enterprise environments: decoupling, failure isolation, observability, and zero trust.
 
 
@@ -35,7 +33,7 @@ To bridge this gap, I rebuilt my home infrastructure from the ground up. I stopp
   </ul>
 </nav>
 
-Here is the architectural breakdown of that system—and why I believe every senior engineer should build something similar.
+Here is the architectural breakdown of that system - and why I believe every senior engineer should build something similar.
 
 <h2 id="the-architecture-at-a-glance">The Architecture at a Glance</h2>
 <div style="text-align:center; margin: 0 0 1.25rem 0;background-color:#2F4F4F;border-radius:8px; box-shadow: 0 6px 18px rgba(0,0,0,0.6); padding:12px">
