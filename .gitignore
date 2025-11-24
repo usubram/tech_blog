@@ -1,0 +1,23 @@
+# Jekyll / Ruby
+_site/
+.bundle/
+vendor/bundle/
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+Gemfile.lock
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Node
+node_modules/
+
+# Secrets / env
+.env
