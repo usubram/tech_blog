@@ -9,3 +9,8 @@ baseurl: ""
 author:
   name: "Umashankar Subramanian"
   url: "https://www.linkedin.com/in/umashankars/"
+
+# Analytics configuration
+analytics:
+  provider: gtm
+  gtm_id: "GTM-WM8DX6T7"
