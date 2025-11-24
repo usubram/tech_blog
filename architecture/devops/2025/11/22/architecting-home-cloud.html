@@ -7,8 +7,19 @@
     <!-- SEO and Open Graph (OG) Meta Tags -->
     <title>The Architect’s Dilemma: Why I Replaced My Home Lab with a Private Cloud | The Hands-On Architect</title>
     <meta property="og:title" content="The Architect’s Dilemma: Why I Replaced My Home Lab with a Private Cloud">
-    <meta property="og:description" content="As a Distinguished Architect, I spend the majority of my professional life designing large-scale distributed systems for the retail sector. We talk about platforms that handle unpredictable load, require five-nines availability, and operate with strict cost discipline. The work is often abstract—diagrams, reference architectures, review boards, and design debates.">
+    <meta property="og:description" content="As a Distinguished Architect, I spend the majority of my professional life designing large-scale distributed systems for the retail sector. We talk about platforms that handle unpredictable load, require five-nines availability, and operate with strict cost discipline. The work is often abstract - diagrams, reference architectures, review boards, and design debates.">
     <meta property="og:site_name" content="The Hands-On Architect">
+    <link rel="canonical" href="https://umashankar.dev/architecture/devops/2025/11/22/architecting-home-cloud.html">
+    <meta name="description" content="A hands-on architect’s journey building a private cloud at home, with lessons on zero trust, storage, high availability, and disaster recovery.">
+    <meta property="og:title" content="The Architect’s Dilemma: Why I Replaced My Home Lab with a Private Cloud">
+    <meta property="og:description" content="A hands-on architect’s journey building a private cloud at home, with lessons on zero trust, storage, high availability, and disaster recovery.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://umashankar.dev/architecture/devops/2025/11/22/architecting-home-cloud.html">
+    <meta property="og:image" content="https://umashankar.dev/assets/img/architecture.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Architect’s Dilemma: Why I Replaced My Home Lab with a Private Cloud">
+    <meta name="twitter:description" content="A hands-on architect’s journey building a private cloud at home, with lessons on zero trust, storage, high availability, and disaster recovery.">
+    <meta name="twitter:image" content="https://umashankar.dev/assets/img/architecture.svg">
     <!-- Note: You might want to add a default og:image or one based on page front matter -->
     <!-- <meta property="og:image" content="https://umashankar.dev/assets/images//assets/img/architecture.svg"> -->
 
@@ -105,14 +116,14 @@
 
     <header>
         <h1>The Architect’s Dilemma: Why I Replaced My Home Lab with a Private Cloud</h1>
-        <p>By  on November 22, 2025</p>
+        <p>By <a href="https://www.linkedin.com/in/umashankars/" target="_blank" rel="noopener">Umashankar Subramanian</a> on November 22, 2025</p>
     </header>
     <div class="container">
         <main>
-            <p>As a Distinguished Architect, I spend the majority of my professional life designing large-scale distributed systems for the retail sector. We talk about platforms that handle unpredictable load, require five-nines availability, and operate with strict cost discipline. The work is often abstract—diagrams, reference architectures, review boards, and design debates.</p>
+            <p>As a Distinguished Architect, I spend the majority of my professional life designing large-scale distributed systems for the retail sector. We talk about platforms that handle unpredictable load, require five-nines availability, and operate with strict cost discipline. The work is often abstract - diagrams, reference architectures, review boards, and design debates.</p>
 
 <p>But here’s the uncomfortable truth: Architects become less effective when they stop being hands-on.
-Real systems behave differently under load, during failures, or when constraints collide. The best way to stay sharp is to intentionally expose yourself to those constraints—not in theory, but on real hardware, real networks, and real services.
+Real systems behave differently under load, during failures, or when constraints collide. The best way to stay sharp is to intentionally expose yourself to those constraints - not in theory, but on real hardware, real networks, and real services.
 To bridge this gap, I rebuilt my home infrastructure from the ground up. I stopped treating it as a “home lab” and started treating it as a production environment. I built a fully segmented, observable, distributed private cloud, applying the same patterns I insist on in enterprise environments: decoupling, failure isolation, observability, and zero trust.</p>
 
 <blockquote>
@@ -131,7 +142,7 @@ To bridge this gap, I rebuilt my home infrastructure from the ground up. I stopp
   </ul>
 </nav>
 
-<p>Here is the architectural breakdown of that system—and why I believe every senior engineer should build something similar.</p>
+<p>Here is the architectural breakdown of that system - and why I believe every senior engineer should build something similar.</p>
 
 <h2 id="the-architecture-at-a-glance">The Architecture at a Glance</h2>
 <div style="text-align:center; margin: 0 0 1.25rem 0;background-color:#2F4F4F;border-radius:8px; box-shadow: 0 6px 18px rgba(0,0,0,0.6); padding:12px">
@@ -194,8 +205,6 @@ To bridge this gap, I rebuilt my home infrastructure from the ground up. I stopp
 
         </main>
     </div>
-
-    <!-- Mermaid support removed: no diagrams rendered client-side. -->
 
 </body>
 </html>
